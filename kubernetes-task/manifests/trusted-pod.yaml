@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: trusted-pod
+  labels:
+    app: trusted
+spec:
+  containers:
+    - name: trusted
+      image: curlimages/curl
+      command: ["sleep", "3600"]
